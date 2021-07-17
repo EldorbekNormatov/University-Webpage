@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./eduford_img/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./course.html">COURSE</a></li>
+                    <li><a href="./block.html">BLOCK</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMEnu()"></i>
+        </nav>
+        <h1>Contact US </h1>
+    </section>
+
+    <!-- contact us -->
+
+    <div id="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5997.112675896336!2d69.19293711931597!3d41.274994950641265!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8a20d11b5fa3%3A0x8eb4ffad53680ac4!2sASR%20KAFE!5e0!3m2!1sen!2s!4v1626486707208!5m2!1sen!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>XY Road, ABC Building</h5>
+                        <p>Tashkent, Chilonzor</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>+1 0123456789</h5>
+                        <p>Monday to Sunday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>
+                        <h5>info@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter email address" required>
+                    <input type="text" placeholder="Enter your subject" required>
+                    <textarea  rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+
+    <!-- Footer  -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam exercitationem est fugiat iusto qui
+            numquam.<br>Amet
+            recusandae dicta in repellat eaque numquam possimus rerum corrupti.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMEnu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+
+</html>
